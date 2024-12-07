@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 47px;
+    left: 42px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: rgba(23, 35, 61, 1);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.link-header {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-right: 32px;
+}
+
+.link-header:hover {
+    color: rgba(255, 166, 0, 0.552);
+}
+
+button {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white;
+    background: rgba(111, 191, 68, 1);
+    height: 51px;
+    width: 124px;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.sign-up:hover {
+    background-color: rgba(111, 191, 68, 0.5);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 85vh;
+    bottom: 0;
+}
+
+.caixa-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 150px 0px 50px;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0.5961538553237915px;
+    text-align: left;
+    color: rgba(22, 26, 73, 1);
+}
+
+p {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.875px;
+    text-align: left;
+    color: rgba(75, 80, 90, 1);
+}
+
+.link-learn-more {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgba(111, 191, 68, 1);
+}
+
+.link-learn-more:hover{
+    color: rgba(255, 0, 0, 0.505);
+}
+
+@media screen and (max-width: 960px) {
+    .link-header {
+        display: none;
+    }
+
+    button {
+        position: fixed;
+        top: 17px;
+        right: 14px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .caixa-image {
+        width: 100vw;
+        height: 51%;
+    }
+
+    img {
+        width: 90vw;
+    }
+
+    .caixa-text {
+        width: 100vw;
+        height: 60%;
+        padding: 0;
+        align-items: center;
+    }
+
+    h1 {
+        width: 100vw;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.5961538553237915px;
+        text-align: center;
+        padding: 0 56px 29px 56px;
+    }
+
+    p {
+        width: 100vw;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 0 50px 26px 50px;
+    }
+
+    .link-learn-more {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: 1px;
+        text-align: left;
+        padding: 0 100px;
+    }
+}
